@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Routes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>User Registration</h1>
+    <form id="register-form">
+      <label for="reg-username">Username:</label>
+      <input type="text" id="reg-username" name="username" required />
+      <br />
+      <label for="reg-password">Password:</label>
+      <input type="password" id="reg-password" name="password" required />
+      <br />
+      <button type="submit">Register</button>
+    </form>
+
+    <h1>View Inbox</h1>
+    <form id="view-inbox-form">
+      <label for="view-username">Username:</label>
+      <input type="text" id="view-username" name="username" required />
+      <br />
+      <button type="submit">View Inbox</button>
+    </form>
+    <div id="inbox-container"></div>
+
+    <h1>Send Email</h1>
+    <form id="send-email-form">
+      <label for="send-username">Recipient Username:</label>
+      <input type="text" id="send-username" name="username" required />
+      <br />
+      <label for="email-subject">Subject:</label>
+      <input type="text" id="email-subject" name="subject" required />
+      <br />
+      <label for="email-message">Message:</label>
+      <textarea id="email-message" name="message" required></textarea>
+      <br />
+      <button type="submit">Send Email</button>
+    </form>
+
+    <div id="success-message"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
